@@ -1,0 +1,1 @@
+console.log('practice 2 js connected');
