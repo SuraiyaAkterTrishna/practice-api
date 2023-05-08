@@ -12,7 +12,7 @@ const displayMeals = (meals) => {
     const mealDiv = document.createElement("div");
     mealDiv.classList.add("col");
     mealDiv.innerHTML = `
-    <div class="card h-100">
+    <div class="card h-100" onclick="loadDetails()">
     <img src="${meal.strMealThumb}" class="card-img-top" alt="...">
     <div class="card-body">
       <h5 class="card-title">${meal.strMeal}</h5>
@@ -28,5 +28,8 @@ const searchFood = () => {
     const searchText = searchField.value;
     loadMeals(searchText);
     searchField.value = ``;
+}
+const loadDetails = () => {
+    console.log("details button clicked");
 }
 loadMeals(``);
